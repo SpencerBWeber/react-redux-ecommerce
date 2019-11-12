@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import SignInForm from './signinForm'
+import SignInForm from "./signinForm";
 
 class SignIn extends Component {
   render() {
@@ -8,7 +8,7 @@ class SignIn extends Component {
       <div className="sign-in">
         <SignInForm className="sign-in__form" />
       </div>
-    )
+    );
   }
 }
 
