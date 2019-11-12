@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
+import { reduxForm, Field } from "redux-form"
 
-export default class SignIn extends Component {
+class SignIn extends Component {
   render() {
     return (
       <div className="sign-in">
@@ -10,3 +11,9 @@ export default class SignIn extends Component {
     )
   }
 }
+
+SignIn = reduxForm({
+  form: 'SignIn'
+})(SignIn)
+
+export default SignIn;
